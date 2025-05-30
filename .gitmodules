@@ -1,0 +1,3 @@
+[submodule "code/whatsapp-summarizer"]
+	path = code/whatsapp-summarizer
+	url = https://github.com/sbblol/whatsapp-summarizer.git
