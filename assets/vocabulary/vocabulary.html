@@ -1,0 +1,67 @@
+<!-- vocabulary.html -->
+---
+layout: default
+title: Vocabulary
+---
+<link rel="stylesheet" href="/assets/css/vocabulary.css" />
+<h1>🧰 CloudDust Vocabulary</h1>
+<p>This is a growing set of metaphors and visual symbols used to communicate cloud security ideas more clearly and memorably.</p>
+
+<div id="vocabulary-list">
+  <noscript>You need JavaScript to view this content.</noscript>
+</div>
+
+<script>
+fetch('/assets/vocabulary/dust.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('vocabulary-list');
+    const categories = {};
+
+    // Organize by category
+    data.forEach(item => {
+      if (!categories[item.category]) {
+        categories[item.category] = [];
+      }
+      categories[item.category].push(item);
+    });
+
+    for (const [category, items] of Object.entries(categories)) {
+      const section = document.createElement('section');
+      const header = document.createElement('h2');
+      header.textContent = category;
+      section.appendChild(header);
+
+      items.forEach(entry => {
+        const div = document.createElement('div');
+        div.className = 'vocab-card';
+        div.innerHTML = `
+          <h3>${entry.icon} ${entry.concept}</h3>
+          <p>${entry.message}</p>
+        `;
+        section.appendChild(div);
+      });
+
+      container.appendChild(section);
+    }
+  })
+  .catch(error => {
+    document.getElementById('vocabulary-list').innerText = 'Failed to load vocabulary.';
+    console.error(error);
+  });
+</script>
+
+<style>
+  #vocabulary-list {
+    padding-top: 1em;
+  }
+  .vocab-card {
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #f9f9f9;
+    border-left: 4px solid #ccc;
+  }
+  .vocab-card h3 {
+    margin: 0;
+  }
+</style>

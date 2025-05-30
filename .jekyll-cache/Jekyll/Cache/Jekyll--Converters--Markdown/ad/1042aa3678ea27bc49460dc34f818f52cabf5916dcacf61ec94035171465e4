@@ -1,0 +1,85 @@
+I"�<p>I’ve wanted to do this for a while. Write things down.<br />
+Not just publish polished ideas, but document the process — the friction, the logic, and the dust in the air before anything settles.</p>
+
+<p><strong>CloudDust</strong> was born out of a need for a place that balances security depth with clarity, without noise.<br />
+Not a newsletter, not a feed. Just a space where I can shake off the mental layers and expose what actually matters in day-to-day cloud security.</p>
+
+<hr />
+
+<h2 id="-why-cloudshake">🐾 Why “Cloudshake”?</h2>
+
+<p>A dog steps out of water and does one thing instinctively: it shakes. Not because it’s planned, but because the body knows it needs clarity.</p>
+
+<p>That’s what this post is — and what this whole project is.<br />
+A <strong>Cloudshake</strong>: the intentional motion to remove what doesn’t belong and make room for real movement.</p>
+
+<hr />
+
+<h2 id="-why-not-use-medium--notion--wordpress">🧱 Why not use Medium / Notion / WordPress?</h2>
+
+<p>Because there’s no “Torah” without bread — and no bread without “Torah”.</p>
+
+<p>A system without structure is noise. But a system without belief is hollow.<br />
+CloudDust isn’t a clone of someone else’s platform. It’s a deliberate act of making and believing — even if the plan isn’t perfect.</p>
+
+<p>I’d rather build something flawed on purpose than imitate a polished illusion.</p>
+
+<p>So I chose something:</p>
+
+<ul>
+  <li><strong>Minimal</strong> – Just Markdown and intention</li>
+  <li><strong>Controlled</strong> – No tracking, no likes, no embedded scripts</li>
+  <li><strong>Secure by design</strong> – No backend, no exposed state</li>
+  <li><strong>Reproducible</strong> – You can fork it, run it offline, and make it yours</li>
+</ul>
+
+<blockquote>
+  <p>Imperfect is honest. Honest is secure.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="-the-local-workflow">🐳 The local workflow</h2>
+
+<p>The blog runs entirely offline using Docker.<br />
+No Ruby installation, no npm, no surprises.</p>
+
+<p>To try it yourself:<br />
+➡️ <a href="/code/run-clouddust-locally/">run-clouddust-locally</a></p>
+
+<p>That folder contains a <code class="language-plaintext highlighter-rouge">Dockerfile</code>, <code class="language-plaintext highlighter-rouge">docker-compose.yml</code>, and everything needed to spin up a full Jekyll environment locally.</p>
+
+<hr />
+
+<h2 id="-content-control">🔒 Content control</h2>
+
+<p>From the start, I wanted to avoid leaking metadata — like timestamps, user agent fingerprints, and even unintended context.</p>
+
+<p>So:</p>
+<ul>
+  <li>Posts don’t use <code class="language-plaintext highlighter-rouge">_posts/</code>, but a custom <code class="language-plaintext highlighter-rouge">_cloudlog/</code> collection</li>
+  <li>URLs don’t contain dates</li>
+  <li>Internal file structure supports referencing without revealing chronology</li>
+</ul>
+
+<p>This isn’t about hiding. It’s about designing a space where <strong>signal &gt; noise</strong>, and publishing is intentional.</p>
+
+<hr />
+
+<h2 id="-what-to-expect-next">🎯 What to expect next</h2>
+
+<p>This blog will focus on:</p>
+
+<ul>
+  <li>Simulating real-world cloud security gaps</li>
+  <li>Documenting how security policies break — and why</li>
+  <li>Building small tools to visualize or validate assumptions</li>
+  <li>Sharing methods that make people say: <em>“Wait, can you actually do that?”</em></li>
+</ul>
+
+<hr />
+
+<p>Thanks for reading this far.<br />
+This Cloudshake was just the first.</p>
+
+:ET

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Cloudshake | CloudDust</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Cloudshake" />
+<meta name="author" content="Dustlog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Shaking off the old dust — this post marks the beginning of CloudDust: why I built it, how it works, and what it means to publish security ideas with clarity and control." />
+<meta property="og:description" content="Shaking off the old dust — this post marks the beginning of CloudDust: why I built it, how it works, and what it means to publish security ideas with clarity and control." />
+<link rel="canonical" href="http://0.0.0.0:4000/log/cloudshake/" />
+<meta property="og:url" content="http://0.0.0.0:4000/log/cloudshake/" />
+<meta property="og:site_name" content="CloudDust" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-30T06:29:53-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Cloudshake" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dustlog"},"dateModified":"2025-05-30T06:29:53-05:00","datePublished":"2025-05-30T06:29:53-05:00","description":"Shaking off the old dust — this post marks the beginning of CloudDust: why I built it, how it works, and what it means to publish security ideas with clarity and control.","headline":"Cloudshake","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/log/cloudshake/"},"url":"http://0.0.0.0:4000/log/cloudshake/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="CloudDust" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">CloudDust</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/code.html">Code Library</a><a class="page-link" href="/">Welcome to CloudDust</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="cloudpost">
+  <h1>Cloudshake</h1>
+
+  <div class="cloudpost-content">
+    <p>I’ve wanted to do this for a while. Write things down.<br />
+Not just publish polished ideas, but document the process — the friction, the logic, and the dust in the air before anything settles.</p>
+
+<p><strong>CloudDust</strong> was born out of a need for a place that balances security depth with clarity, without noise.<br />
+Not a newsletter, not a feed. Just a space where I can shake off the mental layers and expose what actually matters in day-to-day cloud security.</p>
+
+<hr />
+
+<h2 id="-why-cloudshake">🐾 Why “Cloudshake”?</h2>
+
+<p>A dog steps out of water and does one thing instinctively: it shakes. Not because it’s planned, but because the body knows it needs clarity.</p>
+
+<p>That’s what this post is — and what this whole project is.<br />
+A <strong>Cloudshake</strong>: the intentional motion to remove what doesn’t belong and make room for real movement.</p>
+
+<hr />
+
+<h2 id="-why-not-use-medium--notion--wordpress">🧱 Why not use Medium / Notion / WordPress?</h2>
+
+<p>Because there’s no “Torah” without bread — and no bread without “Torah”.</p>
+
+<p>A system without structure is noise. But a system without belief is hollow.<br />
+CloudDust isn’t a clone of someone else’s platform. It’s a deliberate act of making and believing — even if the plan isn’t perfect.</p>
+
+<p>I’d rather build something flawed on purpose than imitate a polished illusion.</p>
+
+<p>So I chose something:</p>
+
+<ul>
+  <li><strong>Minimal</strong> – Just Markdown and intention</li>
+  <li><strong>Controlled</strong> – No tracking, no likes, no embedded scripts</li>
+  <li><strong>Secure by design</strong> – No backend, no exposed state</li>
+  <li><strong>Reproducible</strong> – You can fork it, run it offline, and make it yours</li>
+</ul>
+
+<blockquote>
+  <p>Imperfect is honest. Honest is secure.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="-the-local-workflow">🐳 The local workflow</h2>
+
+<p>The blog runs entirely offline using Docker.<br />
+No Ruby installation, no npm, no surprises.</p>
+
+<p>To try it yourself:<br />
+➡️ <a href="/code/run-clouddust-locally/">run-clouddust-locally</a></p>
+
+<p>That folder contains a <code class="language-plaintext highlighter-rouge">Dockerfile</code>, <code class="language-plaintext highlighter-rouge">docker-compose.yml</code>, and everything needed to spin up a full Jekyll environment locally.</p>
+
+<hr />
+
+<h2 id="-content-control">🔒 Content control</h2>
+
+<p>From the start, I wanted to avoid leaking metadata — like timestamps, user agent fingerprints, and even unintended context.</p>
+
+<p>So:</p>
+<ul>
+  <li>Posts don’t use <code class="language-plaintext highlighter-rouge">_posts/</code>, but a custom <code class="language-plaintext highlighter-rouge">_cloudlog/</code> collection</li>
+  <li>URLs don’t contain dates</li>
+  <li>Internal file structure supports referencing without revealing chronology</li>
+</ul>
+
+<p>This isn’t about hiding. It’s about designing a space where <strong>signal &gt; noise</strong>, and publishing is intentional.</p>
+
+<hr />
+
+<h2 id="-what-to-expect-next">🎯 What to expect next</h2>
+
+<p>This blog will focus on:</p>
+
+<ul>
+  <li>Simulating real-world cloud security gaps</li>
+  <li>Documenting how security policies break — and why</li>
+  <li>Building small tools to visualize or validate assumptions</li>
+  <li>Sharing methods that make people say: <em>“Wait, can you actually do that?”</em></li>
+</ul>
+
+<hr />
+
+<p>Thanks for reading this far.<br />
+This Cloudshake was just the first.</p>
+
+
+  </div>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">CloudDust</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Dustlog</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Insights from the edge of cloud security</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

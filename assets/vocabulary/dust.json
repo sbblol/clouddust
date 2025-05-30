@@ -1,0 +1,33 @@
+[
+    {
+      "category": "Action Tool",
+      "concept": "Vacuum Cleaner",
+      "icon": "🌀",
+      "message": "Solves big problems with one decisive sweep."
+    },
+    {
+      "category": "Action Tool",
+      "concept": "Dust Cloth",
+      "icon": "🧻",
+      "message": "Clears subtle misunderstandings gently."
+    },
+    {
+      "category": "Dust Type",
+      "concept": "Fine Dust",
+      "icon": "🌫️",
+      "message": "Subtle risks hiding in clean-looking systems."
+    },
+    {
+      "category": "Cleanliness Outcome",
+      "concept": "Clean Air",
+      "icon": "🌬️",
+      "message": "Clarity in thought, design, or decision."
+    },
+    {
+      "category": "Experience",
+      "concept": "Smart Control",
+      "icon": "🎛️",
+      "message": "Security dashboards that work quietly but effectively."
+    }
+  ]
+  

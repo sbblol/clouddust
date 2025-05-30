@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CloudDust Vocabulary Schema",
+    "description": "Schema for vocabulary items used to enrich CloudDust with metaphors and analogies.",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": ["category", "concept", "icon", "message"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "High-level grouping (e.g., Action Tool, Dust Type, Experience)."
+        },
+        "concept": {
+          "type": "string",
+          "description": "The name of the object or symbol (e.g., Vacuum Cleaner, Clean Air)."
+        },
+        "icon": {
+          "type": "string",
+          "description": "Emoji representation of the concept."
+        },
+        "message": {
+          "type": "string",
+          "description": "The metaphorical or symbolic meaning."
+        },
+        "tags": {
+          "type": "array",
+          "description": "Optional keywords related to this concept.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "linkedPost": {
+          "type": "array",
+          "description": "Optional list of blog post IDs that reference this concept.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tone": {
+          "type": "string",
+          "description": "Optional tone of the concept (e.g., serious, playful, ironic).",
+          "enum": ["neutral", "serious", "playful", "ironic"]
+        }
+      }
+    }
+  }
+  

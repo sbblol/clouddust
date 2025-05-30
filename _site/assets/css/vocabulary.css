@@ -1,0 +1,21 @@
+.vocab-card {
+    background: #fcfcfc;
+    border-left: 5px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+  }
+  .vocab-card:hover {
+    border-left-color: #555;
+    background: #f5f5f5;
+  }
+  .vocab-card h3 {
+    margin: 0 0 0.3em 0;
+    font-size: 1.2em;
+  }
+  .vocab-card p {
+    margin: 0;
+    color: #444;
+  }
+  

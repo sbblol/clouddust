@@ -1,0 +1,11 @@
+title: CloudDust
+description: Insights from the edge of cloud security
+author: Dustlog
+theme: minima
+
+collections:
+  cloudlog:
+    output: true
+    permalink: /log/:name/
+exclude:
+  - code/
