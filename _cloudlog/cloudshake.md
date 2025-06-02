@@ -4,6 +4,7 @@ title: "Cloudshake"
 excerpt: >
   Shaking off the old dust — this post marks the beginning of CloudDust: why I built it, how it works, and what it means to publish security ideas with clarity and control.
 tags: [foundations, meta, start]
+publish: draft
 ---
 
 I’ve wanted to do this for a while. Write things down.  

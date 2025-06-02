@@ -1,4 +1,5 @@
 # Run CloudDust Locally
+publish: draft
 
 This setup allows you to run the CloudDust blog on your local machine using Docker, without installing Ruby or Jekyll natively.
 

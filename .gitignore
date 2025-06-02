@@ -1,0 +1,37 @@
+# === General ===
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# === Ruby / Jekyll ===
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+Gemfile.lock
+
+# === VSCode / Editor ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === OS metadata ===
+ehthumbs.db
+Desktop.ini
+
+# === Python / Docker (in case of shared tools) ===
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.env
+
+# === Local Scripts or Notes ===
+*.sh
+*.ps1
+*.cmd
+notes/
